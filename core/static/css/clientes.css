@@ -1,0 +1,39 @@
+.clientes{
+    background-image: url('../image/clientes/clientes.jpg');
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    margin-top: 0px;
+}
+.paragrafo{
+    text-align: center;
+    padding: 0px 70px;
+}
+.conheca{
+    padding:75px 8%;
+    background-color: rgba(12,39,78, 0.05);
+}
+.marcas-img{
+    /* width: 40%; */
+    margin: 8%;
+}
+a{
+    color: #0C274E;
+}
+@media screen and (max-width: 1000px){
+    .clientes{
+        background-image: url('../image/clientes/clentes-mob.jpg');
+        text-align: center;
+        margin-top: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 550px;
+    }
+    .marcas{
+        width:50%;
+    }
+}

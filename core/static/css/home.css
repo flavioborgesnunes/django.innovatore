@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.secao-1{
+    /* background-image: url('../Images/home/inage-home-2.jpeg'); */
+    background-image: url('../image/home/bg-home.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+}
+.voltar-topo{
+    position:fixed;
+    z-index: 100;
+    bottom: 25px;
+    right: 20px;
+    opacity: 0;
+    z-index: 100;
+    transition: 1s;
+}
+.voltar-topo-1{
+    position:fixed;
+    z-index: 100;
+    bottom: 25px;
+    right: 20px;
+    z-index: 100;
+    opacity: 1;
+}
+.cookie{
+    background-color: white;
+    border: 2px solid black;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 5;
+    bottom: 0%;
+    left: 25%;
+
+}
+.head-construindo-juntos{
+    margin-left: -40px;
+    padding-right: 13%;
+    margin-top: 30vh;
+}
+.titulo-paragrafo{
+    margin-left: -40px;
+    padding-right: 170px;
+}
+.conheca{
+    padding: 0 15%;
+}
+.img-home2{
+    width:100%;
+    margin-right: 100px;
+}
+.primeiro-paragrafo{
+    padding-left: 8%;
+}
+
+.centro{
+    text-align: center;
+    margin-top: 150px;
+}
+.carousel{
+    width: 100%;
+    margin-top: -40px;
+}
+.card{
+    border:none;
+    padding: 0;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.icones-nossos-projetos{
+    padding-top: 30px;
+    width: 50px;
+    margin-bottom: 40px;
+}
+
+.altura-cards-projetos{
+    height: 300px;
+}
+.altura-cards-projetos a{
+    color: #0C274E;
+}
+.titulo-cards-projetos{
+    font-size: 20px;
+    font-weight: 500;
+}
+.links{
+    display: inline-block;
+    color: #0C274E;
+    margin-bottom: 30px;
+}
+.links:hover{
+    color: #0C274E;
+    text-decoration: none;
+}
+.numeros{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+.numeros-2{
+    font-size: 70px;
+}
+.diferenciais{
+    height: 380px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.diferenciais h1{
+    margin-left: 0px;
+    padding-right:0px;
+    margin-top: 80%;
+    font-size: 1.354vw;
+    color: white;
+    text-align: left;
+}
+.diferenciais p{
+    margin-left: 0px;
+    padding-right:0px;
+    font-size: 0.73vw;
+    color: white;
+    text-align: left;
+}
+.diferenciais a{
+    font-size: 0.73vw;
+    color: white;
+    text-align: left;
+}
+.dif1{
+    background-image: url('../image/home/profissionais.jpeg');
+}
+.dif2{
+    background-image: url('../image/home/segurança.jpeg');
+}
+.dif3{
+    background-image: url('../image/home/qualidade.jpeg');
+}
+.div-fluid{
+    width: 300px;
+}
+.links-brancos{
+    color: white;
+}
+.links-brancos:hover{
+    color: white;
+    text-decoration: none;
+}
+.promovemos{
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+.horas-trabalhadas{
+    border-bottom: 1px solid rgb(212, 205, 205);
+    padding-bottom: 100px;
+}
+.borda-esquerda::after{
+    content:"";
+    position:absolute;
+    z-index:1;
+    bottom:20%;
+    right:0;
+    border-right:1px solid rgb(212, 205, 205);
+    height:60%;
+}
+.container-projetos-realizados{
+    padding-left: 20%;
+}
+.img-proj-real{
+    width: 125%;
+}
+.acidentes{
+    border-bottom: 1px solid rgb(212, 205, 205);
+}
+.inscreva{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #0C274E;
+}
+.inscreva h1{
+    color: white;
+}
+.video{
+    margin-right:0px;
+}
+.container-carousel{
+    width: 130%;
+    margin-left:0px;
+}
+.card-carousel{
+    width: 350px;
+    margin: 30px 0px;
+    height: 325px;
+}
+.slick-prev.slick-arrow:before{
+    color: transparent;
+    
+}
+.slick-next.slick-arrow:before{
+    color: rgb(212, 205, 205);
+}
+
+@media screen and (max-width: 1000px){
+    .secao-1{
+        text-align: center;
+        margin-top: 50%;
+        background-image: url('../image/home/home-1-mob.jpg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 550px;
+    }  
+    .head-construindo-juntos{
+        margin-top: -200px;
+        font-size: 36px;
+        margin-left: 0px;
+    }
+    .titulo-paragrafo{
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 18px;
+    }
+    .margem{
+        margin-top: 5vh;
+    }
+    .img-home2{ margin-top: 30px;
+        width:100%;
+        margin-right:0px;
+    }
+    .centro{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .card-body{
+        height: auto;
+    }
+    .cartoes{
+        width:100%;
+    }
+    .div-cartoes{
+        width:100%;
+    }
+    .container-projetos-realizados{
+        padding-left: 0%;
+    }
+    .img-proj-real{
+        width:100%;
+    }
+    .div-fluid{
+        width: auto;
+    }
+    
+    .cartoes-projetos-realizados{
+        text-align: left;
+        padding-left: 15px;
+        margin-top: 40px;
+        border-bottom: 2px solid rgb(212, 205, 205);
+    }
+    .promovemos{
+        margin-top: 150px;
+    }
+    .horas-treinamento{
+        border-bottom: none;
+        border-right: none;
+    }
+    .borda-esquerda::after{
+        border: none;
+    }
+    .diferenciais{
+        width: 100%;
+        height: auto;
+    }
+    .diferenciais h1{
+        padding-left: 10px;
+        margin-top: 80%;
+        font-size: 22px;
+        color: white;
+        text-align: left;
+    }
+    .diferenciais p{
+        padding: 10px;
+        font-size: 18px;
+        color: white;
+        text-align: left;
+    }
+    .diferenciais a{
+        font-size: 18px;
+        color: white;
+        text-align: left;
+    }
+    .acidentes{
+        border-bottom: none;
+        margin-top: 70px;
+    }
+    .margem-150{
+        margin-top: 20px;
+    }
+    .video{
+        width: 100%;
+        height: 300px;
+    }
+    .container-carousel{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .card-carousel{
+        width: auto;
+        margin: 30px 0px;
+        height: auto;
+    }
+    .slick-prev.slick-arrow:before{
+        color:rgb(212, 205, 205);
+        
+    }
+}

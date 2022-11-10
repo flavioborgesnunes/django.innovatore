@@ -1,0 +1,107 @@
+.logistica{
+    background-image: url('../image/logistica/bg-logistica.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+}
+.blue{
+    background-color: #0C274E;
+    margin-bottom: 100px; 
+    
+    
+}
+.blue h1{
+    color: white;
+    padding-top: 20%;
+    padding-left: 10%;
+}
+.blue p{
+    color: white;
+    
+    padding-top: 0%;
+    padding-left: 10%;
+}
+.blue a{
+    padding-left: 10%;
+}
+.imagens-col-esq{
+    width: 100%;
+    margin-left: -15px;
+}
+.imagens-col-dir{
+    width: 100%;
+    display: flex;
+    margin-left: 15px;
+}
+.paragrafo{
+    padding-left: 18%;
+    padding-right: 18%;
+    margin-bottom: 75px;
+}
+a{
+    color: white;
+    font-weight: 500;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+.padding-direita{
+    margin-top: 25px;
+}
+.padding-direita p{
+    margin-bottom: 35px;
+}
+@media screen and (max-width: 1000px){
+    body{
+        text-align: center;
+    }
+    p{
+        font-size: 18px;
+    }
+    .logistica{
+        background-image: url('../image/logistica/logistica-mob.jpg');
+        text-align: center;
+        margin-top: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 550px;
+    }
+    .padding-direita{
+        margin-top: 50px;
+        text-align: left;
+    }
+    .reverso{
+        flex-direction: column-reverse;
+    }
+    .blue{
+    background-color: white;
+    margin-bottom: 100px; 
+    
+    
+    }
+    .blue h1{
+        color: #0C274E;
+        padding-top: 0%;
+        padding-left: 0%;
+    }
+    .blue p{
+        color: #0C274E;
+        padding-top: 0%;
+        padding-left: 0%;
+    }
+    .blue a{
+        padding-left: 0%;
+    }
+    .imagens-col-esq{
+        margin-left: 0%;
+    }
+    .imagens-col-dir{
+        margin-left: 0%;
+    }
+}

@@ -1,0 +1,53 @@
+.modelo{
+    background-image: url('../image/modelo/modelo.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+}
+.modelo-p-titulo{
+    width: 45%;
+    margin-left: 27%;
+    text-align: center;
+}
+.texto-esquerda{
+    border-bottom: 2px solid rgb(212, 205, 205);
+    border-right: 2px solid rgb(212, 205, 205);
+}
+.texto-esquerda-baixo{
+    border-right: 2px solid rgb(212, 205, 205);
+}
+.texto-direita{
+    border-bottom: 2px solid rgb(212, 205, 205);
+}
+.container-obra{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: rgba(12,39,78, 0.05);
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.imagens-obra{
+    padding: 1%;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        text-align: center;
+    }
+    p{
+        font-size: 18px;
+    }
+    .modelo{
+        background-image: url('../image/modelo/modelo-mob.jpg');
+        text-align: center;
+        margin-top: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 550px;
+    }
+}

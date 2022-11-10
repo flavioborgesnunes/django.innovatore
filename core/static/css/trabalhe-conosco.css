@@ -1,0 +1,65 @@
+.trabalhe{
+    background-image: url('../image/Trabalhe-conosco/bg-trabalhe-conosco.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+}
+.num1{
+    color: white;
+    background-color: rgba(12, 39, 78, .9);
+}
+.num2{
+    color: white;
+    background-color: rgba(12, 39, 78, .8);
+}
+.num3{
+    color: white;
+    background-color: rgba(12, 39, 78, .7);
+}
+.numeros{
+    padding-top: 15px;
+    color: white;
+    text-align:center;
+}
+.p-numeros{
+    padding-bottom: 0px;
+    color:white;
+    text-align:center;
+}
+.img-motivos{
+    padding: 40px;
+}
+.h3-motivos{
+    font-size: 28px;
+    font-weight: 500;
+}
+.paragrafo-trabalhe{
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 1000px){
+    body{
+        text-align: center;
+    }
+    p{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .trabalhe{
+        background-image: url('../image/Trabalhe-conosco/trabalhe-conosco-mob.jpg');
+        text-align: center;
+        margin-top: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 550px;
+    }
+    .img-motivos{
+        padding: 0px;
+    }
+}

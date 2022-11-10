@@ -1,0 +1,111 @@
+.missao{
+    background-image: url('../image/missao/bg-missao.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+}
+.missao-img{
+    width: 100%;
+}
+.nossa-visao{
+    margin:0%;
+    margin-top: 150px;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    background-image: url('../image/missao/nossa-visao.jpg');
+    background-size: cover;
+}
+.div-visao{
+    padding-right: 100px;
+}
+.texto-visao{
+    color: white;
+    padding-right: 220px;
+}
+.texto-visao-p{
+    font-size: 1.145833vw;
+    color: white;
+    padding-right: 120px;
+}
+.valores{
+    margin-top: 150px;
+}
+.div-valores{
+    margin-bottom: 40px;
+}
+.imgs{
+    width: 100%;
+}
+.valores-h1{
+    margin-bottom: 50px;
+}
+.texto-valores{
+    font-size: 20px;
+    margin-top: -40px;
+    margin-left: 30px;
+    color: white;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        text-align: center;
+    }
+    p{
+        font-size: 18px;
+    }
+    .missao{
+        background-image: url('../image/missao/missao-mob.jpg');
+        text-align: center;
+        margin-top: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 550px;
+    }
+    .titulo{
+        margin-top: -250px;
+        font-size: 36px;
+    }
+    .nossa-visao{
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+        height: 70vh;
+        width: 100%;
+        background: url('../image/missao/nossa-visao-mob.jpg');
+        background-size: cover;
+        }
+    .nossa-missao{
+        margin: 0;
+    }
+    .div-visao{
+        padding-right: 0%;
+    }
+    .texto-visao{
+        margin-top: -230px;
+        padding: 0%;
+        font-size: 36px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .texto-visao-p{
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        padding:0px 30px;
+        margin-top: 30px;
+    }
+    .valores{
+        margin-top: 50px;
+    }
+    .texto-valores{
+        margin-top: -40px;
+        color: white;
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,13 @@
+_pycache__
+
+*.*~
+
+*.pyc 
+
+.idea
+
+*.po
+
+*.mo
+
+venv

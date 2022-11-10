@@ -1,0 +1,48 @@
+.industriais{
+    background-image: url('../image/industriais/bg-industria.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+}
+.paragrafo{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.imgs-industriais{
+    margin: 2%;
+}
+a{
+    color: #0C274E;
+}
+a:hover{
+    color: #0C274E;
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px){
+    body{
+        text-align: center;
+    }
+    p{
+        font-size: 18px;
+    }
+    .industriais{
+        background-image: url('../image/industriais/industriais-mob.jpg');
+        text-align: center;
+        margin-top: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 550px;
+    }
+    .paragrafo{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .imgs-industriais{
+        margin: 0%;
+    }
+}

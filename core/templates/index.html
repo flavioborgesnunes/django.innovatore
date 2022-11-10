@@ -1,0 +1,432 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% bootstrap_css %}
+    <link rel="stylesheet" type="text/css" media="screen"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    
+    <title>Home Innovatore</title>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid itens">
+          <a id="logo-nav" class="navbar-brand" href="#"><img src="{% static 'image/logo_innovatore_nav.png' %}"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="{% static 'image/icons/hamburguer.png' %}"style="width:22px;" alt=""></span>
+          </button>
+          <div class="collapse navbar-collapse nav-menu itens-texto" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link txt item-nav-selecionado" aria-current="page" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle txt" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    A Innovatore
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- <li><a class="dropdown-item" href="./pags/missao.html">Missão, visão e valores</a></li> -->
+                  <li><a class="dropdown-item" href="{% url 'missao' %}">Missão, visão e valores</a></li>
+                  <li><a class="dropdown-item" href="{% url 'certificacoes' %}">Certificações</a></li>
+                  <li><a class="dropdown-item" href="{% url 'nossa_historia' %}">Nossa história</a></li>
+                  <li><a class="dropdown-item" href="{% url 'nossa_equipe' %}">Nossa equipe</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link txt" href="{% url 'clientes'%}">Clientes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle txt" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projetos
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'projetos' %}">Projetos</a></li>
+                  <li><a class="dropdown-item" href="{% url 'industriais' %}">Industriais</a></li>
+                  <li><a class="dropdown-item" href="{% url 'comerciais' %}">Comerciais</a></li>
+                  <li><a class="dropdown-item" href="{% url 'logisticos' %}">Logísticos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle txt" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Centro de Mídia
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'contatos' %}">Contatos</a></li>
+                  <li><a class="dropdown-item" href="{% url 'blog' %}">Blog</a></li>
+                  <li><a class="dropdown-item" href="{% url 'trabalhe_conosco' %}">Trabalhe conosco</a></li>
+                  <li><a class="dropdown-item" href="{% url 'vagas' %}">Vagas de trabalho</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex formulario" role="search">
+                <input class="form-control me-2" type="search" aria-label="Search"style="background: transparent;">
+                <buttonn type="submit">
+                    <img src="{% static 'image/icones/Group 1.png'%}" alt="" style="width: 25px; margin-Top:8px; margin-left:10px">
+                </button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <section class="secao-1 anime topo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 margem">
+                    <h1 class="head-construindo-juntos">Construindo juntos um futuro mais brilhante</h1>
+                    <p class="margem-p-h1 titulo-paragrafo">Acreditamos que a construção de um futuro melhor começa pelas pessoas. Por
+                        meio de suas experiências e vivências direcionando seus aprendizados para um
+                        futuro próspero e sustentável.</p>
+                    <button class="btn1 margem-button-p">Saiba mais  <img src="{% static 'image/icons/seta.png' %}"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container cookie">
+        <div class="row">
+            <div class="col-11">
+                <p style="font-size: 12px">Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços. Antes de iniciar sua navegação, é necessário que você confirme o uso dos cookies. Para saber mais, leia nossa <a href=""target="_blank">Política de Privacidade.</a> </p>
+            </div>
+            <div class="col-1">
+                <button onclick="apagarcookie()" class="btn btn-primary" style="margin-left: -40px;">Prosseguir</button>
+            </div>
+        </div>
+    </div>
+    
+    <button onclick="subir()"class="voltar-topo btn1"> <img src="{% static 'image/icons/seta.png' %}" style="width:30px; rotate: -90deg;"></button>
+
+    <section class="container margem-150 anime"style="align-items: center;">
+        <div class="row margin-150">
+            <div class="col-lg-6 col-md-12"style="margin-left: 0px;">
+                    <img class="img-home2" src="{% static 'Image/home/image-home-2.png' %}">
+            </div>
+
+            <div class="col-lg-6 col-md-12 primeiro-paragrafo">
+                <p><img src="{% static 'image/home/Line 8.png' %}" alt=""> Sobre nós</p>
+                <h2>Conheça um pouco mais sobre a Innovatore</h2>
+                <p class="margem-p-h1">Somos uma construtora de obras privadas do ramo industrial. Realizamos construções em
+                    Greenfield, ampliação de indústrias em operação e obras comerciais de alto fluxo de
+                    pessoas, como shoppings, hospitais, supermercados, academias e outros.</p>
+                <a href="{% url 'missao' %}"><button class="btn1 margem-button-p">Saiba mais <img src="{% static 'image/icons/seta.png' %}"></button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container margem-150">
+        <div class="row anime">
+            <div class="col-lg-5 col-md-12">
+                <p><img src="{% static 'image/home/Line 8.png' %}" alt=""> Serviços</p>
+                <h1>Nossos projetos</h1>
+                <p class="margem-p-h1">Realizamos mais de 150 projetos de engenharia e infraestrutura, em todo país, nos
+                    segmentos públicos, privados e concessões.</p>
+                <a href="{%  url 'projetos'%}"><button class="btn1 margem-button-p">Saiba mais <img src="{% static 'image/icons/seta.png' %}"></button></a>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="container-fluid container-carousel">
+                    <div class="row carousel">
+                        <div class="col-lg-4">
+                            <div class="card-carousel">
+                                <div class="card-body sombra altura-cards-projetos" >
+                                    <img class="icones-nossos-projetos" src="{% static 'image/home/industriais.png' %}" alt="">
+                                    <h4 class="card-title">Industriais</h4>
+                                    <p class="card-text p-12">Plantas industriais, Petróleo & Gás, Papel & Celulose...</p>
+                                    <a href="{% url 'industriais' %}">Ver projetos <img src="{% static 'image/icons/seta-diagonal-azul.png' %}" style="display: inline-block;" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-carousel"style="border:none;">
+                                <div class="card-body sombra altura-cards-projetos">
+                                    <img src="{% static 'image/home/comerciais.png' %}" alt="" class="icones-nossos-projetos">
+                                    <h4 class="card-title">Comerciais</h4>
+                                    <p class="card-text p-12">Shoppings, Áreas Comercias, Atacados e Varejos.</p><br>
+                                    <a href="{% url 'comerciais' %}">Ver projetos <img src="{% static 'image/icons/seta-diagonal-azul.png' %}" style="display: inline-block;" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-carousel">
+                                <div class="card-body sombra altura-cards-projetos">
+                                    <img src="{% static 'image/home/logistico.png' %}" alt="" class="icones-nossos-projetos">
+                                    <h4 class="card-title">Logístico</h4>
+                                    <p class="card-text p-12">Galpões Logísticos, Armazéns, Silos e Frigoríficos.</p><br>
+                                    <a href="{% url 'logisticos' %}">Ver projetos <img src="{% static 'image/icons/seta-diagonal-azul.png' %}" style="display: inline-block;" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container margem-150" style= "text-align: center;">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 numeros" style="width:100%;color: white; background-color: rgba(12, 39, 78, .9);">
+                <p style="margin-bottom: 0px; color:white; font-size: 55px;">+ <span data-toggle="counter-up">150</span> </p>
+                <p style="margin-bottom: 0px; color:white;font-size: 18px;padding-bottom: 10px">Projetos Realizados</p>
+            </div>
+            <div class="col-lg-3 col-sm-12 numeros" style="width:100%;color: white; background-color:rgba(12, 39, 78, .8);">
+                <p style="margin-bottom: 0px; color:white; font-size: 55px;">+ <span data-toggle="counter-up">120</span> </p>
+                <p style="margin-bottom: 0px; color:white;font-size: 18px;padding-bottom: 10px">Clientes</p>
+            </div>
+            <div class="col-lg-3 col-sm-12 numeros" style="width:100%;color: white; background-color:rgba(12, 39, 78, .7);">
+                <p style="margin-bottom: 0px; color:white; font-size: 55px;">+ <span data-toggle="counter-up">35,000</span></p>
+                <p style="margin-bottom: 0px; color:white;font-size: 18px;padding-bottom: 10px">Área Construída em M²</p>
+            </div>
+            <div class="col-lg-3 col-sm-12 numeros" style="width:100%;color: white; background-color:rgba(12, 39, 78, .6);">
+                <p style="margin-bottom: 0px; color:white; font-size: 55px;">+ <span data-toggle="counter-up">3,000</span></p>
+                <p style="margin-bottom: 0px; color:white;font-size: 18px;padding-bottom: 10px">Funcionários Contratados
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container margem-150 anime">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <p><img src="{% static 'image/home/Line 8.png' %}" alt="">  Serviços</p>
+                <h2>Projetos Realizados</h2>
+                <p>Participamos em mais de 120 projetos de engenharia e infraestrutura nos segmentos privados, públicos e
+                    concessões.</p>
+                    <a href="{%  url 'projetos'%}"><button class="btn1">Saiba mais</button></a>
+            </div>
+            <div class="col-lg-7">
+                <div>
+                    <img src="{% static 'image/home/imagem-home-3.png' %}"class="img-proj-real" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid container-projetos-realizados">
+        <div class="row sombra">
+            <div class="col-lg-4 col-md-12 p-5 borda-esquerda cartoes-projetos-realizados">
+                <img src="{% static 'image/icons/vetor-gestao.png' %}" alt="">
+                <h3 class="margem-p-h1 titulo-cards-projetos">Sistema de gestão bem definido</h3>
+                <p class="p-12">Temos um sistema de gestão testado e aprovado, que previne e minimiza possíveis falhas,
+                    proporcionando mais eficiência nas operações.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-12 p-5 borda-esquerda cartoes-projetos-realizados">
+                <img src="{% static 'image/icons/vetor-folha.png' %}" alt="">
+                <h3 class="margem-p-h1 titulo-cards-projetos">Sustentabilidade</h3>
+                <p class="p-12">Nossas obras atendem aos requisitos sustentáveis de forma eficiente. Desde a redução de
+                    resíduos até o seu descarte, que é realizado com responsabilidade e respeito ao meio
+                    ambiente.</p>
+            </div>
+            <div class="col-lg-4 col-md-12 p-5 cartoes-projetos-realizados div-fluid">
+                <img src="{% static 'image/icons/vetor-grafico.png' %}" alt="">
+                <h3 class="margem-p-h1 titulo-cards-projetos">Expectativas</h3>
+                <p class="p-12">gestão
+                    Nosso compromisso é entender e atender os desejos de nossos clientes, transformando os
+                    seus projetos em realidade, com transparência, qualidade, prazo e melhor custo benefício.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container promovemos anime">
+        <div class="row">
+            <div class="col-lg-12"style="margin-bottom:50px">
+                <h1>Promovemos um ambiente de trabalho seguro</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 horas-trabalhadas borda-esquerda">
+                <h1 class="numeros-2"><span data-toggle="counter-up">64.176</span></h1>
+                <p>Horas trabalhadas</p>
+            </div>
+            <div class="col-lg-6 col-md-12 acidentes">
+                <h1 class="numeros-2">0</h1>
+                <p>Acidentes fatais de funcionários ou contratados</p>
+            </div>
+        </div>
+    </section>
+   
+    <div class="centro margem-150 anime"style="margin-Top:50px">
+        <div>
+            <h1>Nossos Diferenciais</h1>
+        </div>
+    </div>
+    <div class="container text-center anime" style="margin-top:40px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-12 m-3 diferenciais dif1">
+                <h1>Profissionais</h1>
+                <p>Uma equipe especializada para atender qualquer tipo de projeto da engenharia civil.<br><br></p>
+                <p class="margem-p-h1"><a href="">Saber mais <img src="{% static 'image/icons/arrow-right (2).png' %}" alt=""> </a></p>
+            </div>
+            <div class="col-lg-3 col-md-12 m-3 diferenciais dif2">
+                <h1>Segurança</h1>
+                <p>Temos profissionais treinados e capacitados em SSMA (Saúde, Segurança do Trabalho e
+                    Meio Ambiente)</p>
+                <p class="margem-p-h1"><a href="">Saber mais<img src="{% static 'image/icons/arrow-right (2).png' %}" alt=""></a></p>
+            </div>
+            <div class="col-lg-3 col-md-12 m-3 diferenciais dif3">
+                <h1>Qualidade</h1>
+                <p>Somos certificados com ISO9001:2015 proporcionando garantia de qualidade aos seus
+                    projetos.
+                </p>
+                <p class="margem-p-h1"><a href="">Saber mais<img src="{% static 'image/icons/arrow-right (2).png' %}" alt=""></a></p>
+            </div>
+        </div>
+    </div>
+
+    <section class='inscreva margem-150 centro'>
+        <h1>Inscreva-se em nossa Newsletter</h1>
+        <form action="">
+            <input type="text">
+            <button class="btn1">Assinar</button>
+            <p style="color: white;margin-top: 35px">Receba a cada mês as novidades de INNOVATORE no seu e-mail: notícias, ofertas de
+                emprego e artigos de inovação da construção civil.</p>
+        </form>
+    </section>
+
+    <section class="container anime">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 p-4 margem-150">
+                <h1>Fizemos parte dessa grande obra</h1>
+                <p>Empreendimentos com mais de 115mil m² de área construída e mais de 220 lojas instaladas gerando mais de
+                    3.500 empregos diretos gerados na cidade de Ananindeua no estado do Pará. </p>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <a href="https://youtu.be/gSMdwaOWgVw"><img src="{% static 'image/home/video.jpg' %}"class="video"alt=""></a>
+            </div>
+        </div>
+        </section>
+    </section>
+
+    <section class="container anime"style="margin-top:300px;margin-bottom:300px">
+        <h1 style="margin-left:15px; margin-bottom: 50px;">Últimas Notícias</h1>
+        <div class="card-deck m-0 justify-content-center">
+            <div class="card col-lg-4 sombra">
+                <img class="card-img-top" src="{% static 'image/home/card_nt_1.png' %}" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title margem-p-h1">Melhorias e restruturação do terminal portuário da Cargill</h5>
+                    <p class="card-text"style="font-size:14px">A Cargill, uma empresa das maiores empresas do segmento de alimentos está fazendo mais um…</p><br>
+                    <button class="btn1 margem-button-p">Saiba mais  <img src="{% static 'image/icons/seta.png' %}"></button>
+                </div>
+            </div>
+            <div class="card col-lg-4 sombra">
+                <img class="card-img-top" src="{% static 'image/home/card_nt_2.png' %}" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title margem-p-h1">Projeto de ampliação e reforma Dow no Brasil</h5>
+                    <p class="card-text"style="font-size:14px">A Innovatore concluiu mais um grande projeto na cidade de Franco da Rocha no Estado…</p><br>
+                    <button class="btn1 margem-button-p">Saiba mais  <img src="{% static 'image/icons/seta.png' %}"></button>
+                </div>
+            </div>
+            <div class="card col-lg-4 sombra">
+                <img class="card-img-top" src="{% static 'image/home/card_nt_3.png' %}" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title margem-p-h1">Como proteger o material contra corrosão</h5>
+                    <p class="card-text"style="font-size:14px">O aço oferece uma combinação de alta resistência, baixo custo e facilidade de fabricação.</p><br>
+                    <button class="btn1 margem-button-p">Saiba mais  <img src="{% static 'image/icons/seta.png' %}"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-1">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <img src="{% static 'image/LOGO INNOVATORE 2.png" alt=""class="logo-footer">
+                    <div>
+                        <p class="footer-p">Horário de Funcionamento: 08:00 - 18:00 | Segunda a Sexta-Feira</p>
+                    </div>
+                    <div>
+                        <p class="footer-p margem-p-h1">Condomínio Vista Verde Offices
+                            Avenida Queiroz Filho, 1560, Escritório 418 – Torre Rouxinol, Vila Hamburguesa – São Paulos/SP CEP 05319-000</p>
+                        <p class="footer-p-tel">(11) 3135-6832</p>
+                        <p class="footer-p-cnpj">CNPJ 22.632.588/0001-39 </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="divisoes-footer">
+                                <h4 class="footer-h4">Sobre nós</h4>
+                                <div class="p-mob">
+                                    <a class="links-footer" href="{% url 'nossa_historia' %}">Nossa história <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                    <a class="links-footer" href="{% url 'missao' %}">Missão, visão e valores<img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                    <a class="links-footer" href="{% url 'nossa_equipe' %}">Nossa equipe <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                    <a class="links-footer" href="{% url 'certificacoes' %}">Certificações <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="divisoes-footer">
+                                <h4 class="footer-h4">Comunicação</h4>
+                                <div class="p-mob">
+                                    <a class="links-footer" href="{% url 'contatos' %}">Contatos <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                    <a class="links-footer" href="{% url 'blog' %}">Blog <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                    <a class="links-footer" href="{% url 'contatos' %}">Fale conosco <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="divisoes-footer">
+                                <h4 class="footer-h4">Nossos projetos</h4>
+                                <div class="p-mob">
+                                    <a class="links-footer" href="{% url 'industriais' %}">Industriais <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                    <a class="links-footer" href="{% url 'comerciais' %}">Comerciais <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                    <a class="links-footer" href="{% url 'logisticos' %}">Logísticos <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-12">
+                            <h4 class="inscreva-se footer-h4">Inscreva-se</h4>
+                            <input class="input-footer" type="text"><button class="btn1">Assinar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"style="margin-top: 50px">
+            <div class="row">
+                <div class="col-lg-6 col-md-12" style="text-align: left;">
+                    <p class="footer-p">© 2022  Innovatore Engenharia, Todos os direitos reservados.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 redes-sociais">
+                        <!-- <a href=""><img class="redes-sociais-icones" src="./Images/home/twitter-line.png"></a> -->
+                        <a href=""><img class="redes-sociais-icones" src="{% static 'image/home/instagram-line.png' %}"></a>
+                        <a href=""><img class="redes-sociais-icones" src="{% static 'image/home/facebook-fill.png' %}"></a>
+                        <!-- <a href=""><img class="redes-sociais-icones" src="./Images/home/pinterest-line.png"></a> -->
+                        <a href=""><img class="redes-sociais-icones" src="{% static 'image/home/linkedin-fill.png' %}"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% bootstrap_javascript jquery='full'%}
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
+    <!-- <script src="./js/counterup.min.js"></script> -->
+    <script src="{% static 'js/counterup.min.js' %}"></script>
+    <!-- <script src="./js/jquery.waypoints.min.js"></script> -->
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+
+</html>

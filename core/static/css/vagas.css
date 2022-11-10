@@ -1,0 +1,73 @@
+.vagas{
+    background-image: url('../image/vagas/bg-vagas.jpg');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+}
+.parte-time{
+    padding-right: 5%;
+}
+.coluna-direita{
+    padding-right: 20%;
+}
+.container-vagas{
+    border-top: 2px solid rgba(212, 205, 205, .5);
+    padding-top: 50px;
+}
+.titulo-vagas{
+    font-weight: 500;
+}
+.box-vagas{
+    border: 1px solid rgba(212, 205, 205, 1);
+}
+.box-vagas:hover{
+    background-color: #0C274E;
+    color: white;
+    transition: .7s;
+}
+.box-vagas:hover > .titulo-vagas{
+    color: white;
+    transition: .7s;
+}
+.box-vagas:hover > p{
+    color: white;
+    transition: .7s;
+}
+@media screen and (max-width: 1000px){
+    body{
+        text-align: center;
+    }
+    p{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .vagas{
+        background-image: url('../image/vagas/vagas-mob.jpg');
+        text-align: center;
+        margin-top: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 550px;
+    }
+    .titulo-vagas{
+        font-weight: 500;
+        font-size: 32px;
+    }
+    .parte-time{
+        padding-right: 0%;
+    }
+    .coluna-direita{
+        padding-right: 0%;
+    }
+    .container-vagas{
+        border-top: 2px solid rgba(212, 205, 205, .5);
+        padding-top: 50px;
+    }
+}
