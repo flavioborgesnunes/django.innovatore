@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import indexView, blogView, certificacoesView, clientesView, comerciaisView, contatosView, industriaisView, logisticosView, missaoView, modeloView, nossa_equipeView, nossa_historiaView, noticia_blogView, projetosView, trabalhe_conoscoView, vagasView
+from .views import indexView, blogView, certificacoesView, clientesView, comerciaisView, industriaisView, logisticosView, missaoView, modeloView, nossa_equipeView, nossa_historiaView, noticia_blogView, projetosView, trabalhe_conoscoView, vagasView,contatos
 
 urlpatterns = [
     path('', indexView.as_view(), name='index'),
@@ -7,7 +7,8 @@ urlpatterns = [
     path('certificacoes', certificacoesView.as_view(), name='certificacoes'),
     path('clientes', clientesView.as_view(), name='clientes'),
     path('comerciais', comerciaisView.as_view(), name='comerciais'),
-    path('contatos', contatosView.as_view(), name='contatos'),
+    # path('contatos', contatosView.as_view(), name='contatos'),
+    path('contatos', contatos, name='contatos'),
     path('industriais', industriaisView.as_view(), name='industriais'),
     path('logisticos', logisticosView.as_view(), name='logisticos'),
     path('missao', missaoView.as_view(), name='missao'),

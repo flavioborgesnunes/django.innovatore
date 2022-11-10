@@ -7,7 +7,7 @@ class ContatoForm(forms.Form):
     email = forms.EmailField(label='E-mail', max_length=100)
     telefone = forms.IntegerField(label='Telefone')
     assunto = forms.CharField(label='Assunto', max_length=100)
-    muensagem = forms.CharField(label='Mensagem', widget=forms.Textarea)
+    mensagem = forms.CharField(label='Mensagem', widget=forms.Textarea(attrs={"rows":5, "cols":10}))
 
     def send_mail(self):
         nome = self.cleaned_data['nome']
@@ -18,7 +18,7 @@ class ContatoForm(forms.Form):
 
         conteudo = f'Nome: {nome}\nE-mail: {email}\nTelefone: {telefone}\nAssunto: {assunto}\nMensagem: {mensagem}'
         mail = EmailMessage(
-            subject=assunto,
+            subject='Email enviado pelo sistema django',
             body=conteudo,
             from_email='seuContato@innovatore.com.br',
             to= ['seuContato@innovatore.com.br',],

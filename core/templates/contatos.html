@@ -1,5 +1,6 @@
 {% load bootstrap4 %}
 {% load static %}
+{% load widget_tweaks %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -121,26 +122,51 @@
                 <h3>Envie uma mensagem</h3>
                 <p>Se você preferir nos contactar por meio de mensagem, favor preencher o formulário abaixo,
                     para que nossa equipe possa te responder.</p>
-                <form>
+                {% bootstrap_messages %}
+
+
+                <form id="contato" method="post" action="{% url 'contatos' %}" autocomplete="off">
+                    {% csrf_token %}
+                    
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                          <input class="form-control" id="form-nome" placeholder="Seu nome">
+                          <!-- <input class="form-control" id="nome" name="nome" placeholder="Seu nome"> -->
+                          {% render_field form.nome class="form-control" placeholder="Seu nome" type="text" %}
                         </div>
                         <div class="form-group col-md-6">
-                          <input class="form-control" id="form-email" placeholder="Endereço de email">
+                          <!-- <input class="form-control" id="email" name="email" placeholder="Endereço de email"> -->
+                          {% render_field form.email class="form-control" placeholder="Enderço de email" type="text" %}
                         </div>
                         <div class="form-group col-md-6">
-                          <input class="form-control" id="form-tel" placeholder="Número de telefone">
+                          <!-- <input class="form-control" id="telefone" name="telefone" placeholder="Número de telefone"> -->
+                          {% render_field form.telefone class="form-control" placeholder="Telefone" type="text" %}
                         </div>
                         <div class="form-group col-md-6">
-                          <input class="form-control" id="form-assunto" placeholder="Assunto">
+                          <!-- <input class="form-control" id="assunto" nome="assunto" placeholder="Assunto"> -->
+                          {% render_field form.assunto class="form-control" placeholder="Assunto" type="text" %}
                         </div>
+                    
+                      <div class="form-group col-md-12">
+                        <!-- <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Mensagem"></textarea> -->
+                        {% render_field form.mensagem class="form-control" placeholder="Mensagem"type="text" %}
                       </div>
-                      <div class="form-group">
-                        <textarea class="form-control" id="form-text" rows="5" placeholder="Mensagem"></textarea>
-                      </div>
-                      <button class="btn1">Enviar mensagem <img src="{% static 'image/icons/seta.png' %}" alt=""> </button>
+
+                    </div>
+                      {% buttons %}
+                        <button class="btn1" id="form-submit" type="submit">Enviar mensagem <img src="{% static 'image/icons/seta.png' %}" alt=""> </button>
+                      {% endbuttons %}
+                    
                 </form>
+                <!-- <div class="container">
+                    {% if messages %}
+                        {% for m in messages %}
+                            <div class="alert aler-{{m.tags}}">
+                                <button type="button" class="close" data-dismiss="alert"></button>
+                                <strong>{{ m }}</strong>
+                            </div>
+                        {% endfor %}
+                    {% endif%}
+                </div> -->
             </div>
         </div>
     </div>
@@ -294,5 +320,6 @@
             </div>
         </div>
     </footer>
+    {% bootstrap_javascript jquery='full' %}
 </body>
 </html>

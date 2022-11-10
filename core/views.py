@@ -1,9 +1,32 @@
 from django.views.generic import TemplateView
 # from django.views.generic.edit import FormView
+from django.shortcuts import render
+from django.core.mail import send_mail
+
+
 
 from .forms import ContatoForm
-from django.urls import reverse_lazy
+# from django.urls import reverse_lazy
 from django.contrib import messages
+
+
+def contatos(request):
+    form = ContatoForm(request.POST or None)
+    
+    if  str(request.method) == 'POST':
+        if form.is_valid():
+            form.send_mail()
+
+            messages.success(request,'E-mail enviado com sucesso')
+            form = ContatoForm
+        else:
+            messages.error(request, 'Erro ao enviar E-mail')
+            
+
+    context = {
+        'form': form
+    }
+    return render(request, 'contatos.html', context)
 
 
 class indexView(TemplateView):
@@ -23,22 +46,22 @@ class comerciaisView(TemplateView):
 
 
 
-class contatosView(TemplateView):
-    template_name = 'contatos.html'
-    form_class: ContatoForm 
-    success_url: reverse_lazy('contatos')
+# class contatosView(FormView):
+#     template_name = 'contatos'
+#     form_class: ContatoForm 
+#     success_url: reverse_lazy('contatos')
 
-    # def get_context_data(self, **kwargs):
-    #     return super(contatosView,self).get_context_data(**kwargs)
+#     def get_context_data(self, **kwargs):
+#         return super(contatosView,self).get_context_data(**kwargs)
 
-    # def form_valid(self, form, *args, **kwargs):
-    #     form.send_mail()
-    #     messages.success(self.request, 'E-mail enviado com sucesso!')
-    #     return super(contatosView, self).form_valid(form, *args, **kwargs)
+#     def form_valid(self, form, *args, **kwargs):
+#         form.send_mail()
+#         messages.success(self.request, 'E-mail enviado com sucesso!')
+#         return super(contatosView, self).form_valid(form, *args, **kwargs)
 
-    # def form_invalid(self, form, *args, **kwargs):
-    #     messages.error(self.request, 'Erro ao enviar mendagem!')
-    #     return super(contatosView, self).form_invalid(form, *args, **kwargs)
+#     def form_invalid(self, form, *args, **kwargs):
+#         messages.error(self.request, 'Erro ao enviar mendagem!')
+#         return super(contatosView, self).form_invalid(form, *args, **kwargs)
 
 
 
