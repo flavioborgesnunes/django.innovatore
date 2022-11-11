@@ -329,4 +329,8 @@ footer{
     .redes-sociais{
         text-align: center;
     }
+    .reverso{
+        flex-direction: column-reverse;
+    }
+
 }

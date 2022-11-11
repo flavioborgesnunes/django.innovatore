@@ -96,26 +96,27 @@
             </div>
         </div>
     </section>
+
     <div class="container cookie">
         <div class="row">
             <div class="col-11">
                 <p style="font-size: 12px">Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços. Antes de iniciar sua navegação, é necessário que você confirme o uso dos cookies. Para saber mais, leia nossa <a href=""target="_blank">Política de Privacidade.</a> </p>
             </div>
             <div class="col-1">
-                <button onclick="apagarcookie()" class="btn btn-primary" style="margin-left: -40px;">Prosseguir</button>
+                <button onclick="apagarcookie()" class="btn btn-primary btn-cookie" style="margin-left: -40px;">Prosseguir</button>
             </div>
         </div>
     </div>
     
     <button onclick="subir()"class="voltar-topo btn1"> <img src="{% static 'image/icons/seta.png' %}" style="width:30px; rotate: -90deg;"></button>
 
-    <section class="container margem-150 anime"style="align-items: center;">
-        <div class="row margin-150">
+    <section class="container-fluid primeiro-paragrafo anime">
+        <div class="row reverso">
             <div class="col-lg-6 col-md-12"style="margin-left: 0px;">
                     <img class="img-home2" src="{% static 'Image/home/image-home-2.png' %}">
             </div>
 
-            <div class="col-lg-6 col-md-12 primeiro-paragrafo">
+            <div class="col-lg-6 col-md-12 texto-primeira-sessao">
                 <p><img src="{% static 'image/home/Line 8.png' %}" alt=""> Sobre nós</p>
                 <h2>Conheça um pouco mais sobre a Innovatore</h2>
                 <p class="margem-p-h1">Somos uma construtora de obras privadas do ramo industrial. Realizamos construções em
@@ -126,7 +127,7 @@
         </div>
     </section>
 
-    <section class="container margem-150">
+    <section class="container container-nossos-projetos">
         <div class="row anime">
             <div class="col-lg-5 col-md-12">
                 <p><img src="{% static 'image/home/Line 8.png' %}" alt=""> Serviços</p>
@@ -174,7 +175,7 @@
         </div>
     </section>
 
-    <section class="container margem-150" style= "text-align: center;">
+    <section class="container margem-150 margem-inferior container-numeros" style= "text-align: center;">
         <div class="row">
             <div class="col-lg-3 col-sm-12 numeros" style="width:100%;color: white; background-color: rgba(12, 39, 78, .9);">
                 <p style="margin-bottom: 0px; color:white; font-size: 55px;">+ <span data-toggle="counter-up">150</span> </p>
@@ -196,7 +197,7 @@
         </div>
     </section>
 
-    <section class="container margem-150 anime">
+    <section class="container margem-50 anime container-texto-projetos-realizados">
         <div class="row">
             <div class="col-lg-5 col-md-12">
                 <p><img src="{% static 'image/home/Line 8.png' %}" alt="">  Serviços</p>
@@ -241,7 +242,7 @@
     <section class="container promovemos anime">
         <div class="row">
             <div class="col-lg-12"style="margin-bottom:50px">
-                <h1>Promovemos um ambiente de trabalho seguro</h1>
+                <h2>Promovemos um ambiente de trabalho seguro</h2>
             </div>
         </div>
         <div class="row">
@@ -256,9 +257,9 @@
         </div>
     </section>
    
-    <div class="centro margem-150 anime"style="margin-Top:50px">
+    <div class="centro margem-100 anime">
         <div>
-            <h1>Nossos Diferenciais</h1>
+            <h2>Nossos Diferenciais</h2>
         </div>
     </div>
     <div class="container text-center anime" style="margin-top:40px;">
@@ -287,17 +288,17 @@
     <section class='inscreva margem-150 centro'>
         <h1>Inscreva-se em nossa Newsletter</h1>
         <form action="">
-            <input type="text">
+            <input type="text" placeholder="Seu e-mail" class="input-newsletter">
             <button class="btn1">Assinar</button>
             <p style="color: white;margin-top: 35px">Receba a cada mês as novidades de INNOVATORE no seu e-mail: notícias, ofertas de
                 emprego e artigos de inovação da construção civil.</p>
         </form>
     </section>
 
-    <section class="container anime">
+    <section class="container anime container-video">
         <div class="row">
             <div class="col-lg-5 col-md-12 p-4 margem-150">
-                <h1>Fizemos parte dessa grande obra</h1>
+                <h2>Fizemos parte dessa grande obra</h2>
                 <p>Empreendimentos com mais de 115mil m² de área construída e mais de 220 lojas instaladas gerando mais de
                     3.500 empregos diretos gerados na cidade de Ananindeua no estado do Pará. </p>
             </div>
@@ -308,8 +309,8 @@
         </section>
     </section>
 
-    <section class="container anime"style="margin-top:300px;margin-bottom:300px">
-        <h1 style="margin-left:15px; margin-bottom: 50px;">Últimas Notícias</h1>
+    <section class="container anime container-ultimas-noticias">
+        <h2 style="margin-left:15px; margin-bottom: 50px;">Últimas Notícias</h2>
         <div class="card-deck m-0 justify-content-center">
             <div class="card col-lg-4 sombra">
                 <img class="card-img-top" src="{% static 'image/home/card_nt_1.png' %}" alt="Imagem de capa do card">
@@ -342,7 +343,7 @@
         <div class="container footer-1">
             <div class="row">
                 <div class="col-lg-4 col-md-12">
-                    <img src="{% static 'image/LOGO INNOVATORE 2.png" alt=""class="logo-footer">
+                    <img src="{% static 'image/LOGO_INNOVATORE_2.png" alt=""class="logo-footer">
                     <div>
                         <p class="footer-p">Horário de Funcionamento: 08:00 - 18:00 | Segunda a Sexta-Feira</p>
                     </div>

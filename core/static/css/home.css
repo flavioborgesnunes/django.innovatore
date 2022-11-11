@@ -42,8 +42,12 @@
     margin-top: 30vh;
 }
 .titulo-paragrafo{
+    align-items: center;
     margin-left: -40px;
     padding-right: 170px;
+}
+.texto-primeira-sessao{
+    padding: 3% 12% 0  5%;
 }
 .conheca{
     padding: 0 15%;
@@ -53,13 +57,15 @@
     margin-right: 100px;
 }
 .primeiro-paragrafo{
-    padding-left: 8%;
+    padding: 12%;
+    margin-top: -100px;
 }
 
 .centro{
     text-align: center;
     margin-top: 150px;
 }
+
 .carousel{
     width: 100%;
     margin-top: -40px;
@@ -77,6 +83,10 @@
     padding-top: 30px;
     width: 50px;
     margin-bottom: 40px;
+}
+.input-newsletter{
+    height: 38px;
+    width:500px;
 }
 
 .altura-cards-projetos{
@@ -154,7 +164,7 @@
     margin-top: 150px;
     text-align: center;
     margin-bottom: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .horas-trabalhadas{
     border-bottom: 1px solid rgb(212, 205, 205);
@@ -205,6 +215,10 @@
 .slick-next.slick-arrow:before{
     color: rgb(212, 205, 205);
 }
+.container-ultimas-noticias{
+    margin-top: 200px;
+    margin-bottom: 250px;
+}
 
 @media screen and (max-width: 1000px){
     .secao-1{
@@ -217,14 +231,38 @@
         width: 100%;
         height: 550px;
     }  
+    .cookie{
+        display: none;
+        /* width: 100%;
+        left: 0; */
+    }
+    /* .btn-cookie{
+        font-size: 8px;
+        margin-top: 100px;
+        margin-right: 0px;
+    } */
     .head-construindo-juntos{
         margin-top: -200px;
         font-size: 36px;
         margin-left: 0px;
+        padding: 0px;
     }
+    .primeiro-paragrafo{
+        text-align: left;
+        padding: 8%;
+        margin-top: 0px;
+    }
+    .texto-primeira-sessao{
+        margin-top: 50px;
+        padding: 0;
+    }
+
     .titulo-paragrafo{
         margin-left: 0px;
         padding-right: 0px;
+    }
+    .container-nossos-projetos{
+        text-align: left;
     }
     h2{
         font-size: 32px;
@@ -247,6 +285,9 @@
         width: 100%;
         margin-top: 10px;
     }
+    .container-nossos-projetos{
+        margin-top: 50px;
+    }
     .card-body{
         height: auto;
     }
@@ -256,8 +297,15 @@
     .div-cartoes{
         width:100%;
     }
+    .container-texto-projetos-realizados{
+        text-align: left;
+    }
     .container-projetos-realizados{
         padding-left: 0%;
+    }
+    .input-newsletter{
+        height: 38px;
+        width:auto;
     }
     .img-proj-real{
         width:100%;
@@ -267,13 +315,14 @@
     }
     
     .cartoes-projetos-realizados{
+        
         text-align: left;
         padding-left: 15px;
         margin-top: 40px;
         border-bottom: 2px solid rgb(212, 205, 205);
     }
     .promovemos{
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .horas-treinamento{
         border-bottom: none;
@@ -283,12 +332,13 @@
         border: none;
     }
     .diferenciais{
+        align-items: center;
         width: 100%;
         height: auto;
     }
     .diferenciais h1{
         padding-left: 10px;
-        margin-top: 80%;
+        margin-top: 60%;
         font-size: 22px;
         color: white;
         text-align: left;
@@ -311,11 +361,16 @@
     .margem-150{
         margin-top: 20px;
     }
+    .container-video{
+        margin-top: 75px;
+        /* margin-bottom: 75px; */
+    }
     .video{
         width: 100%;
         height: 300px;
     }
     .container-carousel{
+        margin-top: 50px;
         width: 100%;
         margin-left: 20px;
     }
@@ -324,8 +379,17 @@
         margin: 30px 0px;
         height: auto;
     }
+    .container-numeros{
+        margin-top: 100px;
+    }
     .slick-prev.slick-arrow:before{
         color:rgb(212, 205, 205);
-        
+    }
+    .container-ultimas-noticias{
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .card-body{
+        text-align: left;
     }
 }

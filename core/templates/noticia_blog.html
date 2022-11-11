@@ -150,6 +150,80 @@
       </div>
     </div>
   </div> 
+  <footer>
+    <div class="container footer-1">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <img src="{% static 'image/LOGO_INNOVATORE_2.png" alt=""class="logo-footer">
+                <div>
+                    <p class="footer-p">Horário de Funcionamento: 08:00 - 18:00 | Segunda a Sexta-Feira</p>
+                </div>
+                <div>
+                    <p class="footer-p margem-p-h1">Condomínio Vista Verde Offices
+                        Avenida Queiroz Filho, 1560, Escritório 418 – Torre Rouxinol, Vila Hamburguesa – São Paulos/SP CEP 05319-000</p>
+                    <p class="footer-p-tel">(11) 3135-6832</p>
+                    <p class="footer-p-cnpj">CNPJ 22.632.588/0001-39 </p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="divisoes-footer">
+                            <h4 class="footer-h4">Sobre nós</h4>
+                            <div class="p-mob">
+                                <a class="links-footer" href="{% url 'nossa_historia' %}">Nossa história <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                <a class="links-footer" href="{% url 'missao' %}">Missão, visão e valores<img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                <a class="links-footer" href="{% url 'nossa_equipe' %}">Nossa equipe <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                <a class="links-footer" href="{% url 'certificacoes' %}">Certificações <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="divisoes-footer">
+                            <h4 class="footer-h4">Comunicação</h4>
+                            <div class="p-mob">
+                                <a class="links-footer" href="{% url 'contatos' %}">Contatos <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                <a class="links-footer" href="{% url 'blog' %}">Blog <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                <a class="links-footer" href="{% url 'contatos' %}">Fale conosco <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="divisoes-footer">
+                            <h4 class="footer-h4">Nossos projetos</h4>
+                            <div class="p-mob">
+                                <a class="links-footer" href="{% url 'industriais' %}">Industriais <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                <a class="links-footer" href="{% url 'comerciais' %}">Comerciais <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                                <a class="links-footer" href="{% url 'logisticos' %}">Logísticos <img src="{% static 'image/icons/arrow-right (2).png' %}"style="width:30px" alt=""></a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-lg-12">
+                        <h4 class="inscreva-se footer-h4">Inscreva-se</h4>
+                        <input class="input-footer" type="text"><button class="btn1">Assinar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"style="margin-top: 50px">
+        <div class="row">
+            <div class="col-lg-6 col-md-12" style="text-align: left;">
+                <p class="footer-p">© 2022  Innovatore Engenharia, Todos os direitos reservados.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 redes-sociais">
+                    <!-- <a href=""><img class="redes-sociais-icones" src="./Images/home/twitter-line.png"></a> -->
+                    <a href=""><img class="redes-sociais-icones" src="{% static 'image/home/instagram-line.png' %}"></a>
+                    <a href=""><img class="redes-sociais-icones" src="{% static 'image/home/facebook-fill.png' %}"></a>
+                    <!-- <a href=""><img class="redes-sociais-icones" src="./Images/home/pinterest-line.png"></a> -->
+                    <a href=""><img class="redes-sociais-icones" src="{% static 'image/home/linkedin-fill.png' %}"></a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
