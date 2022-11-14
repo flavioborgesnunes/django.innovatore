@@ -95,7 +95,7 @@
         <div class="container margem-150">
             <div class="row div-industriais">
                 <div class="col-lg-4 col-sm-12"><img class="imagens" src="{% static 'image/projetos/industrial.png' %}" alt=""></div>
-                <div class="col-lg-8 col-sm-12 row">
+                <div class="col-lg-8 col-sm-12 row lista-industriais">
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Saint-Gobain – Vinhedo-SP;</p></div>
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Intertank – Macaé-RJ;</p></div>
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Cargill Alivmentos – Uberlândia-MG;</p></div>
@@ -126,11 +126,10 @@
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Kingspam – Cambuí-MG.</p></div>
                 </div>
             </div>
-            <p class="text-center margem-p-h1 tag-veja-mais">Ver mais projetos</p>
 
             <div class="row div-comerciais">
                 <div class="col-lg-4 col-sm-12"><img class="imagens" src="{% static 'image/projetos/comercial.jpeg' %}" alt=""></div>
-                <div class="col-lg-8 col-sm-12 row">
+                <div class="col-lg-8 col-sm-12 row lista-comerciais">
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Oba Hortifruti – Santo André-SP;</p></div>
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Supermercado Paulista – Orlândia-SP;</p></div>
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Supermercado Paulista – Guaíra-SP;</p></div>
@@ -146,28 +145,27 @@
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">LaveService – Jardinópolis-SP;</p></div>
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Viapav – Americana-SP.</p></div>     
                 </div>
-                <p class="text-center margem-p-h1">Ver mais projetos</p>
             </div>
 
 
             <div class="row div-logisticos">
                 <div class="col-lg-4 col-sm-12"><img class="imagens" src="{% static 'image/projetos/logistico.jpeg' %}" alt=""></div>
-                <div class="col-lg-8 col-sm-12 row">
+                <div class="col-lg-8 col-sm-12 row lista-logisticos">
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Capri Importações e Exportações – Guarulhos-SP;</p></div>
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Ritrama Brasil – Jundiaí-SP;</p></div>
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Vertic – Indaiatuba-SP;</p></div>
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Logbras – Embu das Artes-SP;</p></div>
                     <div class="col-lg-5 col-sm-12 m-1 p-14 div-projetos sombra"><p class="p-14 projetos-p">Ala Park – Pouso Alegre-MG.</p></div>
                 </div>
-                <p class="text-center margem-p-h1">Ver mais projetos</p>
             </div>
+            <p class="text-center margem-p-h1 tag-veja-mais">Ver mais projetos</p>
 
         </div>
     </section>
     <section class="container-fluid" style="width: 90%;">
         <div class="row">
             <div class="col-12">
-                <h3 class="construimos">Construímos com com autoridade adquirida, pela vasta experiência, em realizar projetos
+                <h3 class="construimos">Construímos com autoridade adquirida, pela vasta experiência, em realizar projetos
                     que envolvem vários setores das áreas comerciais, industriais, instalações de
                     entretenimentos, shoppings, centros de negócios, galpões e armazéns.
                 </h3>
@@ -211,19 +209,19 @@
             <div class="col-12 text-center"style="margin-bottom:50px;">
                 <h1>Conheça nossos projetos</h1>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 m-3 p-5 container-final">
                 <img src="{% static 'image/clientes/cargil.png' %}" alt="" class="imagens">
                 <h1>Cargill</h1>
                 <p>Silo- Uberlândia - MG</p>
                 <a href="{% url 'modelo' %}">Ver projeto <img src="{% static 'image/icons/seta-diagonal-azul.png' %}" alt=""> </a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 m-3 p-5 container-final">
                 <img src="{% static 'image/clientes/intertank-2.png' %}" alt="" class="imagens">
                 <h1>Intertank</h1>
                 <p>Nova Unidade - Macaé - RJ</p>
                 <a href="">Ver projeto <img src="{% static 'image/icons/seta-diagonal-azul.png' %}" alt=""> </a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 m-3 p-5 container-final">
                 <img src="{% static 'image/projetos/saint.png' %}" alt="" class="imagens">
                 <h1>Saint Gobain</h1>
                 <p>Reforma e Ampliação - Vinhedo- SP</p>
