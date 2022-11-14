@@ -7,11 +7,6 @@
     width: 100%;
     margin-top: 0px;
 }
-.titulo-projetos{
-    text-align: center;
-    padding-top: 20vh;
-    font-weight: 500;
-}
 .projetos-p-titulo{
     width: 45%;
     margin-left: 30%;
@@ -48,9 +43,22 @@
 a{
     color: #0C274E;
 }
-a:hover{
-    color:#0C274E;
-    text-decoration: none;
+.anima-mapa{
+    
+    overflow: hidden;
+    height: 330px;
+}
+.tag-veja-mais{
+    cursor: pointer;
+}
+.div-industriais{
+    display: flex;
+}
+.div-comerciais{
+    display: none;
+}
+.div-logisticos{
+    display: none;
 }
 @media screen and (max-width: 1000px){
     .projetos{
