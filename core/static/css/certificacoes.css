@@ -8,23 +8,23 @@
     margin-top: 0px;
 }
 .div-certificacao{
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 .div-certificacao::after{
     content:"";
     position:absolute;
     z-index:1;
-    top:140%;
+    top:145%;
     right:10%;
     border-bottom:1px solid rgb(212, 205, 205);
     width:80%;
 }
 .texto-certificacao{
     border-left: 1px solid rgb(212, 205, 205);
-    padding:0 300px 0 180px;
+    padding:0 300px 0px 180px;
 }
 .img-certificacao{
-    margin-left: 300px;
+    margin-left: 200px;
     padding-right: 100px;
 }
 @media screen and (max-width: 1000px){
