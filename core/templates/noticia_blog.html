@@ -1,3 +1,5 @@
+{% load bootstrap4 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,75 +7,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% bootstrap_css %}
     <link rel="stylesheet" type="text/css" media="screen"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/noticias.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/noticias.css' %}">
     <title>Noticias Blog</title>
     
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid itens">
-        <a class="navbar-brand" href="#"><img src="../Images/logo_innovatore_nav.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span><img src="../icons/hamburguer.png"style="width:22px;" alt=""></span>
-        </button>
-        <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link txt" aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle txt" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  A Innovatore
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../pags/missao.html">Missão, visão e valores</a></li>
-                <li><a class="dropdown-item" href="../pags/certificacoes.html">Certificações</a></li>
-                <li><a class="dropdown-item" href="../pags/nossa-historia.html">Nossa história</a></li>
-                <li><a class="dropdown-item" href="../pags/nossa-equipe.html">Nossa equipe</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link txt" href="../pags/clientes.html">Clientes</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle txt" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projetos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../pags/projetos.html">Áreas de Atuação</a></li>
-                <li><a class="dropdown-item" href="../pags/industriais.html">Industriais</a></li>
-                <li><a class="dropdown-item" href="../pags/comerciais.html">Comerciais</a></li>
-                <li><a class="dropdown-item" href="../pags/logisticos.html">Logísticos</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle txt item-nav-selecionado" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Centro de Mídia
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../pags/contatos.html">Contatos</a></li>
-                <li><a class="dropdown-item" href="../pags/blog.html">Blog</a></li>
-                <li><a class="dropdown-item" href="../pags/trabalhe-conosco.html">Trabalhe conosco</a></li>
-                <li><a class="dropdown-item" href="../pags/vagas.html">Vagas de trabalho</a></li>
-              </ul>
-            </li>
-            
-          </ul>
-          <form class="d-flex formulario" role="search">
-              <input class="form-control me-2" type="search" aria-label="Search"style="background: transparent;">
-              <buttonn type="submit">
-                  <img src="../Images/icones/Group 1.png" alt="" style="width: 25px; margin-Top:8px; margin-left:10px">
-              </button>
-          </form>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid itens">
+          <a id="logo-nav" class="navbar-brand" href="#"><img src="{% static 'image/logo_innovatore_nav.png' %}"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="{% static 'image/icons/hamburguer.png' %}"style="width:22px;" alt=""></span>
+          </button>
+          <div class="collapse navbar-collapse nav-menu itens-texto" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link txt" aria-current="page" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle txt" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    A Innovatore
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- <li><a class="dropdown-item" href="./pags/missao.html">Missão, visão e valores</a></li> -->
+                  <li><a class="dropdown-item" href="{% url 'missao' %}">Missão, visão e valores</a></li>
+                  <li><a class="dropdown-item" href="{% url 'certificacoes' %}">Certificações</a></li>
+                  <li><a class="dropdown-item" href="{% url 'nossa_historia' %}">Nossa história</a></li>
+                  <li><a class="dropdown-item" href="{% url 'nossa_equipe' %}">Nossa equipe</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link txt" href="{% url 'clientes'%}">Clientes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle txt" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projetos
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'projetos' %}">Áreas de Atuação</a></li>
+                  <li><a class="dropdown-item" href="{% url 'industriais' %}">Industriais</a></li>
+                  <li><a class="dropdown-item" href="{% url 'comerciais' %}">Comerciais</a></li>
+                  <li><a class="dropdown-item" href="{% url 'logisticos' %}">Logísticos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle txt item-nav-selecionado" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Centro de Mídia
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'contatos' %}">Contatos</a></li>
+                  <li><a class="dropdown-item" href="{% url 'blog' %}">Blog</a></li>
+                  <li><a class="dropdown-item" href="{% url 'trabalhe_conosco' %}">Trabalhe conosco</a></li>
+                  <li><a class="dropdown-item" href="{% url 'vagas' %}">Vagas de trabalho</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex formulario" role="search">
+                <input class="form-control me-2" type="search" aria-label="Search"style="background: transparent;">
+                <buttonn type="submit">
+                    <img src="{% static 'image/icones/Group 1.png'%}" alt="" style="width: 25px; margin-Top:8px; margin-left:10px">
+                </button>
+            </form>
+          </div>
         </div>
-      </div>
-  </nav>
+    </nav>
 
   <div class="container-fluid container-geral">
     <div class="row">
@@ -81,7 +85,7 @@
         <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                  <img src="../Images/noticias/melhorias.png" class="imagens">
+                  <img src="{% static 'image/noticias/melhorias.png' %}" class="imagens">
                   <p class="p-14">27 de fevereiro de 2021</p>
                   <h2 class="titulo-noticias">Melhorias e restruturação do terminal portuário da Cargill</h2>
                   <p class="margem-p-h1">A Cargill, uma empresa das maiores empresas do segmento de alimentos está fazendo mais um investimento e trazendo melhorias para o seu terminal portuário na cidade de Porto Velho no estado de Rondônia.<br><br>
@@ -118,7 +122,7 @@
       </div>
       <div class="col-lg-4 recentes">
           <input type="text"style="height: 38px; width: 250px">
-          <button class="btn1"><img src="../Images/blog/Search.png" alt=""></button>
+          <button class="btn1"><img src="{% static 'image/blog/Search.png' %}" alt=""></button>
           <div class="container">
             <h3 class="margem-50 border-botton-padrao">Posts recentes</h3>
             <div class="row margem-p-h1">
@@ -139,11 +143,9 @@
                 </div>
                 <div class="col-lg-12 margem-100">
                     <h3 class="border-botton-padrao">Redes Sociais</h3>
-                    <a href=""><img class="redes-sociais" src="../Images/blog/twiter.png"></a>
-                    <a href=""><img class="redes-sociais" src="../Images/blog/insta.png"></a>
-                    <a href=""><img src="../Images/blog/face.png"style="width:18px; margin:10px"></a>
-                    <a href=""><img class="redes-sociais" src="../Images/blog/printer.png"></a>
-                    <a href=""><img class="redes-sociais" src="../Images/blog/in.png"></a>
+                    <a href=""><img class="redes-sociais" src="{% static 'image/blog/insta.png' %}"></a>
+                    <a href=""><img src="{% static 'image/blog/face.png' %}"style="width:18px; margin:10px"></a>
+                    <a href=""><img class="redes-sociais" src="{% static 'image/blog/in.png' %}"></a>
                 </div>
             </div>
           </div>
