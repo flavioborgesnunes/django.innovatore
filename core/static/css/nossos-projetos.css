@@ -16,9 +16,20 @@
     margin-left: 22%;
     margin-top: 50px;
 }
+.ul-projetos::after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:116%;
+    right:42.5%;
+    border-bottom:1px solid rgb(212, 205, 205);
+    width:18%;
+}
 .li-projetos{
+    font-size: 20px;
+    line-height: 40px;
     display: inline-block;
-    padding: 0 50px;
+    padding: 0 30px;
     list-style:circle;
 }
 .construimos{
@@ -79,6 +90,36 @@ a{
     overflow: hidden;
     height: 265px;
 }
+.cai{
+    display: flex;
+    margin: auto;
+    z-index: 2;
+}
+.cci{
+    display: none;
+    margin: auto;
+    z-index: 2;
+}
+.cac{
+    display: none;
+    margin: auto;
+    z-index: 2;
+}
+.ccc{
+    display: flex;
+    margin: auto;
+    z-index: 2;
+}
+.cal{
+    display: none;
+    margin: auto;
+    z-index: 2;
+}
+.ccl{
+    display: flex;
+    margin: auto;
+    z-index: 2;
+}
 @media screen and (max-width: 1000px){
     .projetos{
         background-image: url('../image/projetos/projetos-mob.jpg');
@@ -94,10 +135,21 @@ a{
         margin-top: -300px;
         font-size: 36px;
     }
+    .projetos-brasil{
+        margin-top: 75px;
+    }
     .projetos-p-titulo{
         width: 80%;
         margin-left: 10%;
         text-align: center;
+    }
+    .ul-projetos{
+        margin-left: 10%;
+        /* border: none; */
+    }
+    .li-projetos{
+        font-size: 14px;
+        padding: 0px 10px;
     }
     .construimos{
         font-size: 28px;
