@@ -56,6 +56,7 @@ a{
 }
 .tag-veja-mais{
     cursor: pointer;
+    margin-left: 250px;
 }
 .div-industriais{
     display: flex;
@@ -159,5 +160,12 @@ a{
     }
     .container-final{
         text-align: left;
+    }
+    .tag-veja-mais{
+        
+        margin:100px auto;
+    }
+    .mob-none{
+        display: none;
     }
 }
