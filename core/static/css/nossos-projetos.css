@@ -16,7 +16,7 @@
     margin-left: 22%;
     margin-top: 50px;
 }
-.ul-projetos::after{
+/* .ul-projetos::after{
     content:"";
     position:absolute;
     z-index:-1;
@@ -24,7 +24,7 @@
     right:42.5%;
     border-bottom:1px solid rgb(212, 205, 205);
     width:18%;
-}
+} */
 .li-projetos{
     font-size: 20px;
     line-height: 40px;
